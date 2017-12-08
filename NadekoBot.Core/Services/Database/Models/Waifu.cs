@@ -31,16 +31,16 @@ namespace NadekoBot.Core.Services.Database.Models
             }
             if (AffinityId == null)
             {
-                status = $"... but {waifuUsername}'s heart is empty";
+                status = $"... but {waifuUsername} swears loyalty to no one.";
             }
             else if (AffinityId == ClaimerId)
             {
-                status = $"... and {waifuUsername} likes {claimerUsername} too <3";
+                status = $"... and {waifuUsername} has sworn loyalty to {claimerUsername}, as well!";
             }
             else {
-                status = $"... but {waifuUsername}'s heart belongs to {Affinity.Username.TrimTo(20)}#{Affinity.Discriminator}";
+                status = $"... but {waifuUsername} has sworn loyalty to {Affinity.Username.TrimTo(20)}#{Affinity.Discriminator}";
             }
-            return $"**{waifuUsername}#{Waifu.Discriminator}** - claimed by **{claimer}**\n\t{status}";
+            return $"**{waifuUsername}#{Waifu.Discriminator}** - hired by **{claimer}**\n\t{status}";
         }
     }
 }

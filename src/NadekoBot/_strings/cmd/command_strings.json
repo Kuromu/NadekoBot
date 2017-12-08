@@ -947,18 +947,10 @@
   },
   "raffle": {
     "Cmd": "raffle",
-    "Desc": "Prints a name and ID of a random online user from the server, or from the online user in the specified role.",
+    "Desc": "Prints a name and ID of a random user from the online list from the (optional) role.",
     "Usage": [
       "{0}raffle",
       "{0}raffle RoleName"
-    ]
-  },
-  "raffleany": {
-    "Cmd": "raffleany",
-    "Desc": "Prints a name and ID of a random user from the server, or from the specified role.",
-    "Usage": [
-      "{0}raffleany",
-      "{0}raffleany  RoleName"
     ]
   },
   "give": {
@@ -1009,7 +1001,7 @@
     "Desc": "Starts a game of trivia. You can add `nohint` to prevent hints. First player to get to 10 points wins by default. You can specify a different number. 30 seconds per question.",
     "Usage": [
       "{0}t",
-      "{0}t --timeout 5 -p -w 3 -q 10"
+      "{0}t 5 nohint"
     ]
   },
   "tl": {
@@ -1055,18 +1047,18 @@
     ]
   },
   "pick": {
-    "Cmd": "pick",
-    "Desc": "Picks the currency planted in this channel. 60 seconds cooldown.",
+    "Cmd": "accept",
+    "Desc": "Accepts a drop notification. 60 seconds cooldown.",
     "Usage": [
-      "{0}pick"
+      "{0}accept"
     ]
   },
   "plant": {
-    "Cmd": "plant",
-    "Desc": "Spend an amount of currency to plant it in this channel. Default is 1. (If bot is restarted or crashes, the currency will be lost)",
+    "Cmd": "drop",
+    "Desc": "Drop refined metal in this channel for another to take. Default amount is 1.",
     "Usage": [
-      "{0}plant",
-      "{0}plant 5"
+      "{0}drop",
+      "{0}drop 5"
     ]
   },
   "gencurrency": {
@@ -1364,28 +1356,21 @@
   },
   "smashcast": {
     "Cmd": "smashcast hb",
-    "Desc": "Notifies this channel when the specified user starts streaming.",
+    "Desc": "Notifies this channel when a certain user starts streaming.",
     "Usage": [
       "{0}smashcast SomeStreamer"
     ]
   },
   "twitch": {
     "Cmd": "twitch tw",
-    "Desc": "Notifies this channel when the specified user starts streaming.",
+    "Desc": "Notifies this channel when a certain user starts streaming.",
     "Usage": [
       "{0}twitch SomeStreamer"
     ]
   },
-  "picarto": {
-    "Cmd": "picarto pa",
-    "Desc": "Notifies this channel when the specified user starts streaming.",
-    "Usage": [
-      "{0}picarto SomeStreamer"
-    ]
-  },
   "mixer": {
     "Cmd": "mixer bm",
-    "Desc": "Notifies this channel when the specified user starts streaming.",
+    "Desc": "Notifies this channel when a certain user starts streaming.",
     "Usage": [
       "{0}mixer SomeStreamer"
     ]
@@ -1766,11 +1751,11 @@
     ]
   },
   "cash": {
-    "Cmd": "$ currency $$ $$$ cash cur",
-    "Desc": "Check how much currency a person has. (Defaults to yourself)",
+    "Cmd": "wallet ref refined metal",
+    "Desc": "Check how much refined a person has. (Defaults to yourself)",
     "Usage": [
-      "{0}$",
-      "{0}$ @SomeGuy"
+      "{0}ref",
+      "{0}ref @SomeGuy"
     ]
   },
   "listperms": {
@@ -1978,10 +1963,10 @@
   },
   "listquotes": {
     "Cmd": "listquotes liqu",
-    "Desc": "Lists all quotes on the server ordered alphabetically or by ID. 15 Per page.",
+    "Desc": "Lists all quotes on the server ordered alphabetically. 15 Per page.",
     "Usage": [
-      "{0}liqu 3",
-      "{0}liqu 3 id"
+      "{0}liqu",
+      "{0}liqu 3"
     ]
   },
   "typedel": {
@@ -2155,10 +2140,10 @@
   },
   "acro": {
     "Cmd": "acrophobia acro",
-    "Desc": "Starts an Acrophobia game.",
+    "Desc": "Starts an Acrophobia game. Second argument is optional round length in seconds. (default is 60)",
     "Usage": [
       "{0}acro",
-      "{0}acro -s 30"
+      "{0}acro 30"
     ]
   },
   "logevents": {
@@ -2322,18 +2307,18 @@
     ]
   },
   "waifuclaimeraffinity": {
-    "Cmd": "affinity",
-    "Desc": "Sets your affinity towards someone you want to be claimed by. Setting affinity will reduce their `{0}claim` on you by 20%. You can leave second argument empty to clear your affinity. 30 minutes cooldown.",
+    "Cmd": "loyalty",
+    "Desc": "Sets your loyalty towards a mercenary you want to be hired by. Swearing loyalty will reduce their `{0}hire` price on you by 20%. You can leave second argument empty to remove all loyalty. 30 minutes cooldown.",
     "Usage": [
-      "{0}affinity @MyHusband",
-      "{0}affinity"
+      "{0}loyalty @DatScout",
+      "{0}loyalty"
     ]
   },
   "waifuclaim": {
-    "Cmd": "claimwaifu claim",
-    "Desc": "Claim a waifu for yourself by spending currency.  You must spend at least 10% more than her current value unless she set `{0}affinity` towards you.",
+    "Cmd": "hire",
+    "Desc": "Hire a mercenary for yourself by spending currency.  You must spend at least 10% more than their current value unless they set `{0}loyalty` towards you.",
     "Usage": [
-      "{0}claim 50 @Himesama"
+      "{0}hire 50 @Hoovy"
     ]
   },
   "waifureset": {
@@ -2344,41 +2329,41 @@
     ]
   },
   "waifutransfer": {
-    "cmd": "waifutransfer",
-    "desc": "Transfer the ownership of one of your waifus to another user. You must pay 10% of your waifu's value.",
+    "cmd": "merctransfer",
+    "desc": "Transfer the services of a mercenary you hired to another. You must pay 10% of the merc's current value.",
     "usage": [
-      "{0}waifutransfer @ExWaifu @NewOwner"
+      "{0}merctransfer @CurrentMerc @NewEmployer"
     ]
   },
   "waifugift": {
-    "Cmd": "waifugift gift gifts",
-    "Desc": "Gift an item to someone. This will increase their waifu value by 50% of the gifted item's value if they don't have affinity set towards you, or 100% if they do. Provide no arguments to see a list of items that you can gift.",
+    "Cmd": "gift gifts",
+    "Desc": "Gift an item to someone. This will increase their mercenary value by 50% of the gifted item's value if they haven't sworn loyalty to you, or 100% if they have. Provide no arguments to see a list of items that you can gift.",
     "Usage": [
       "{0}gifts",
       "{0}gift Rose @Himesama"
     ]
   },
   "waifuleaderboard": {
-    "Cmd": "waifus waifulb",
-    "Desc": "Shows top 9 waifus. You can specify another page to show other waifus.",
+    "Cmd": "mercs merclb",
+    "Desc": "Shows top 9 mercenaries. You can specify another page to show other mercenaries.",
     "Usage": [
       "{0}waifus",
       "{0}waifulb 3"
     ]
   },
   "divorce": {
-    "Cmd": "divorce",
-    "Desc": "Releases your claim on a specific waifu. You will get some of the money you've spent back unless that waifu has an affinity towards you. 6 hours cooldown.",
+    "Cmd": "fire",
+    "Desc": "Fires one of your hired mercenaries. You will get some of the money you've spent back unless that merc has sworn loyalty to you. 6 hours cooldown.",
     "Usage": [
-      "{0}divorce @CheatingSloot"
+      "{0}fire @SlyMerc"
     ]
   },
   "waifuinfo": {
-    "Cmd": "waifuinfo waifustats",
-    "Desc": "Shows waifu stats for a target person. Defaults to you if no user is provided.",
+    "Cmd": "mercinfo mercstats",
+    "Desc": "Shows mercenary stats for a target person. Defaults to you if no user is provided.",
     "Usage": [
-      "{0}waifuinfo @MyCrush",
-      "{0}waifuinfo"
+      "{0}mercinfo @b4nny",
+      "{0}mercinfo"
     ]
   },
   "mal": {
@@ -2440,7 +2425,7 @@
   },
   "tictactoe": {
     "Cmd": "tictactoe ttt",
-    "Desc": "Starts a game of tic tac toe. Another user must run the command in the same channel in order to accept the challenge. Use numbers 1-9 to play.",
+    "Desc": "Starts a game of tic tac toe. Another user must run the command in the same channel in order to accept the challenge. Use numbers 1-9 to play. 15 seconds per move.",
     "Usage": [
       "{0}ttt"
     ]
@@ -2850,11 +2835,11 @@
       "{0}xpn server channel"
     ]
   },
-  "xpleveluprewards": {
-    "Cmd": "xplvluprewards xprews xpcrs xprrs xprolerewards xpcurrewards",
-    "Desc": "Shows currently set level up rewards.",
+  "xprolerewards": {
+    "Cmd": "xprolerewards xprrs",
+    "Desc": "Shows currently set role rewards.",
     "Usage": [
-      "{0}xprews"
+      "{0}xprrs"
     ]
   },
   "xprolereward": {
@@ -2862,13 +2847,6 @@
     "Desc": "Sets a role reward on a specified level. Provide no role name in order to remove the role reward.",
     "Usage": [
       "{0}xprr 3 Social"
-    ]
-  },
-  "xpcurrencyreward": {
-    "Cmd": "xpcurreward xpcr",
-    "Desc": "Sets a currency reward on a specified level. Provide no amount in order to remove the reward.",
-    "Usage": [
-      "{0}xpcr 3 50"
     ]
   },
   "xpleaderboard": {
@@ -2897,13 +2875,6 @@
     "Desc": "Creates a club. You must be at least level 5 and not be in the club already.",
     "Usage": [
       "{0}clubcreate b1nzy's friends"
-    ]
-  },
-  "clubtransfer": {
-    "Cmd": "clubtransfer",
-    "Desc": "Transfers the ownership of the club to another member of the club.",
-    "Usage": [
-      "{0}clubtransfer @b1nzy"
     ]
   },
   "clubinformation": {
@@ -3120,25 +3091,24 @@
     ]
   },
   "timelyset": {
-    "cmd": "timelyset",
-    "desc": "Sets the 'timely' currency allowance amount for users. Second argument is period in hours, default is 24 hours.",
+    "cmd": "dailyset",
+    "desc": "Sets the 'daily' currency allowance amount for users.",
     "usage": [
-      "{0}timelyset 100",
-      "{0}timelyset 50 12"
+      "{0}dailyset 100"
     ]
   },
   "timely": {
-    "cmd": "timely",
-    "desc": "Use to claim your 'timely' currency. Bot owner has to specify the amount and the period on how often you can claim your currency.",
+    "cmd": "daily",
+    "desc": "Use to claim your 'daily' currency.",
     "usage": [
-      "{0}timely"
+      "{0}daily"
     ]
   },
   "timelyreset": {
-    "cmd": "timelyreset",
-    "desc": "Resets all user timeouts on `{0}timely` command.",
+    "cmd": "dailyreset",
+    "desc": "Resets all user timeouts on `{0}daily` command.",
     "usage": [
-      "{0}timelyreset"
+      "{0}dailyreset"
     ]
   },
   "novel": {
