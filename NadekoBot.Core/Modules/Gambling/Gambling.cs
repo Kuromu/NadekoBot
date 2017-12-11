@@ -290,7 +290,7 @@ namespace NadekoBot.Modules.Gambling
 
                 if (rdMsg == null)
                 {
-                    rdMsg = await Context.Channel.EmbedAsync(embed)
+                    rdMsg = await Context.Channel.EmbedAsync(embed).WithThumbnailUrl("https://i.imgur.com/b5Vb7Ut.png")
                         .ConfigureAwait(false);
                 }
                 else

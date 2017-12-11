@@ -97,8 +97,8 @@ namespace NadekoBot.Core.Modules.Gambling.Common
             int n1, n2;
             do
             {
-                n1 = _rng.Next(0, 5);
-                n2 = _rng.Next(0, 5);
+                n1 = _rng.Next(0, 100);
+                n2 = _rng.Next(0, 100);
                 Rolls.Add((n1, n2));
                 if (n1 != n2)
                 {
