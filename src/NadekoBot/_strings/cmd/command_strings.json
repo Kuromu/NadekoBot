@@ -1766,11 +1766,11 @@
     ]
   },
   "cash": {
-    "Cmd": "$ currency $$ $$$ cash cur",
+    "Cmd": "$ wallet",
     "Desc": "Check how much currency a person has. (Defaults to yourself)",
     "Usage": [
-      "{0}$",
-      "{0}$ @SomeGuy"
+      "{0}wallet",
+      "{0}wallet @SomeGuy"
     ]
   },
   "listperms": {
