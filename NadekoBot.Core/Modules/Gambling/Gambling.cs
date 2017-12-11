@@ -130,9 +130,9 @@ namespace NadekoBot.Modules.Gambling
         public async Task Cash([Remainder] IUser user = null)
         {
             if(user == null)
-                await ConfirmLocalized("has", Format.Bold(Context.User.ToString()), $"{GetCurrency(Context.User.Id)} {CurrencySign}").ConfigureAwait(false);
+                await ConfirmLocalized("has", Format.Bold(Context.User.ToString()), $"{GetCurrency(Context.User.Id).ToString("N0")} {CurrencySign}").ConfigureAwait(false);
             else
-                await ReplyConfirmLocalized("has", Format.Bold(user.ToString()), $"{GetCurrency(user.Id)} {CurrencySign}").ConfigureAwait(false);
+                await ReplyConfirmLocalized("has", Format.Bold(user.ToString()), $"{GetCurrency(user.Id).ToString("N0")} {CurrencySign}").ConfigureAwait(false);
         }
 
         [NadekoCommand, Usage, Description, Aliases]
@@ -478,7 +478,7 @@ namespace NadekoBot.Modules.Gambling
 
                 var j = i;
                 embed.AddField(efb => efb.WithName("#" + (9 * (page - 1) + j + 1) + " " + usrStr)
-                                         .WithValue(x.Amount.ToString() + " " + CurrencySign)
+                                         .WithValue(x.Amount.ToString("N0") + " " + CurrencySign)
                                          .WithIsInline(true));
             }
 
