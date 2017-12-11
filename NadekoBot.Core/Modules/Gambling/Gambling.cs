@@ -287,10 +287,10 @@ namespace NadekoBot.Modules.Gambling
 {Format.Bold(u.ToString())} rolled **{rolls.Item2}**
 --
 ";
-
+                embed.WithThumbnailUrl("https://i.imgur.com/b5Vb7Ut.png");
                 if (rdMsg == null)
                 {
-                    rdMsg = await Context.Channel.EmbedAsync(embed).WithThumbnailUrl("https://i.imgur.com/b5Vb7Ut.png")
+                    rdMsg = await Context.Channel.EmbedAsync(embed)
                         .ConfigureAwait(false);
                 }
                 else
