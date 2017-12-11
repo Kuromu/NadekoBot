@@ -28,11 +28,11 @@ namespace NadekoBot.Core.Modules.Gambling.Common
             NoFunds,
             Timeout,
         }
-        
+
         private readonly Timer _timeoutTimer;
         private readonly NadekoRandom _rng = new NadekoRandom();
         private readonly SemaphoreSlim _locker = new SemaphoreSlim(1, 1);
-        
+
         public event Func<RollDuelGame, Task> OnGameTick;
         public event Func<RollDuelGame, Reason, Task> OnEnded;
 
@@ -62,7 +62,7 @@ namespace NadekoBot.Core.Modules.Gambling.Common
                 {
                     _locker.Release();
                 }
-            }, null, TimeSpan.FromSeconds(15), TimeSpan.FromMilliseconds(-1));
+            }, null, TimeSpan.FromSeconds(35), TimeSpan.FromMilliseconds(-1));
         }
 
         public async Task StartGame()
@@ -104,13 +104,13 @@ namespace NadekoBot.Core.Modules.Gambling.Common
                 {
                     if (n1 > n2)
                     {
-                        Winner = P1;                                                                                                                                                                                                                                                                                                
+                        Winner = P1;
                     }
                     else
                     {
                         Winner = P2;
                     }
-                    await _cs.AddAsync(Winner, "Roll Duel win", (long)(Amount * 2 * 0.98f))
+                    await _cs.AddAsync(Winner, "Roll Duel win", (long)(Amount * 2 * 0.9f))
                         .ConfigureAwait(false);
                 }
                 try { await OnGameTick?.Invoke(this); } catch { }

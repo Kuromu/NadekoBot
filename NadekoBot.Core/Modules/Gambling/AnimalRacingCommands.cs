@@ -74,7 +74,7 @@ namespace NadekoBot.Modules.Gambling
                     {
                         return Context.Channel.SendConfirmAsync(GetText("animal_race"),
                                             GetText("animal_race_won_money", Format.Bold(winner.Username),
-                                                winner.Animal.Icon, (race.FinishedUsers[0].Bet * (race.Users.Length - 1)) + _bc.BotConfig.CurrencySign));
+                                                winner.Animal.Icon, (int)Math.Round(race.FinishedUsers[0].Bet * race.Users.Length * 0.9) + _bc.BotConfig.CurrencySign));
                     }
                     else
                     {

@@ -72,7 +72,7 @@ namespace NadekoBot.Modules.Gambling
             _cache.RemoveAllTimelyClaims();
             await ReplyConfirmLocalized("timely_reset").ConfigureAwait(false);
         }
-        
+
         [NadekoCommand, Usage, Description, Aliases]
         [OwnerOnly]
         public async Task TimelySet(int num, int period = 24)
@@ -192,9 +192,9 @@ namespace NadekoBot.Modules.Gambling
                                                       amount)))
                          .ConfigureAwait(false);
 
-            await ReplyConfirmLocalized("mass_award", 
-                amount + CurrencySign, 
-                Format.Bold(users.Count.ToString()), 
+            await ReplyConfirmLocalized("mass_award",
+                amount + CurrencySign,
+                Format.Bold(users.Count.ToString()),
                 Format.Bold(role.Name)).ConfigureAwait(false);
         }
 
@@ -273,8 +273,8 @@ namespace NadekoBot.Modules.Gambling
                 game.OnGameTick += Game_OnGameTick;
                 game.OnEnded += Game_OnEnded;
 
-                await ReplyConfirmLocalized("roll_duel_challenge", 
-                    Format.Bold(Context.User.ToString()), 
+                await ReplyConfirmLocalized("roll_duel_challenge",
+                    Format.Bold(Context.User.ToString()),
                     Format.Bold(u.ToString()),
                     Format.Bold(amount + CurrencySign))
                         .ConfigureAwait(false);
@@ -311,7 +311,7 @@ namespace NadekoBot.Modules.Gambling
                         var winner = rdGame.Winner == rdGame.P1
                             ? Context.User
                             : u;
-                        embed.Description += $"\n**{winner}** Won {((long)(rdGame.Amount * 2 * 0.98)) + CurrencySign}";
+                        embed.Description += $"\n**{winner}** Won {((long)(rdGame.Amount * 2 * 0.9)) + CurrencySign}";
                         await rdMsg.ModifyAsync(x => x.Embed = embed.Build())
                             .ConfigureAwait(false);
                     }
@@ -472,8 +472,8 @@ namespace NadekoBot.Modules.Gambling
             {
                 var x = richest[i];
                 var usr = await Context.Guild.GetUserAsync(x.UserId).ConfigureAwait(false);
-                var usrStr = usr == null 
-                    ? x.UserId.ToString() 
+                var usrStr = usr == null
+                    ? x.UserId.ToString()
                     : usr.Username?.TrimTo(20, true);
 
                 var j = i;

@@ -95,7 +95,7 @@ namespace NadekoBot.Modules.Gambling.Common.AnimalRacing
                 var animal = _animalsQueue.Dequeue();
                 user.Animal = animal;
                 _users.Add(user);
-                
+
                 if (_animalsQueue.Count == 0) //start if no more spots left
                     await Start().ConfigureAwait(false);
 
@@ -114,7 +114,7 @@ namespace NadekoBot.Modules.Gambling.Common.AnimalRacing
                     if(user.Bet > 0)
                         await _currency.AddAsync(user.UserId, "Race refund", user.Bet).ConfigureAwait(false);
                 }
-                
+
                 var _sf = OnStartingFailed?.Invoke(this);
                 CurrentPhase = Phase.Ended;
                 return;
@@ -143,7 +143,7 @@ namespace NadekoBot.Modules.Gambling.Common.AnimalRacing
                 }
 
                 if (FinishedUsers[0].Bet > 0)
-                    await _currency.AddAsync(FinishedUsers[0].UserId, "Won a Race", FinishedUsers[0].Bet * (_users.Count - 1))
+                    await _currency.AddAsync(FinishedUsers[0].UserId, "Won a Race", (long)Math.Round(FinishedUsers[0].Bet * _users.Count * 0.9))
                         .ConfigureAwait(false);
 
                 var _ended = OnEnded?.Invoke(this);
