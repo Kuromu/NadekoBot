@@ -62,7 +62,7 @@ namespace NadekoBot.Core.Modules.Gambling.Common
                 {
                     _locker.Release();
                 }
-            }, null, TimeSpan.FromSeconds(35), TimeSpan.FromMilliseconds(-1));
+            }, null, TimeSpan.FromSeconds(45), TimeSpan.FromMilliseconds(-1));
         }
 
         public async Task StartGame()
@@ -110,7 +110,7 @@ namespace NadekoBot.Core.Modules.Gambling.Common
                     {
                         Winner = P2;
                     }
-                    await _cs.AddAsync(Winner, "Roll Duel win", (long)(Amount * 2 * 0.9f))
+                    await _cs.AddAsync(Winner, "Roll Duel win", (long)(Amount * 2 * 0.8f))
                         .ConfigureAwait(false);
                 }
                 try { await OnGameTick?.Invoke(this); } catch { }
