@@ -311,7 +311,7 @@ namespace NadekoBot.Modules.Gambling
                         var winner = rdGame.Winner == rdGame.P1
                             ? Context.User
                             : u;
-                        embed.Description += $"\n**{winner}** Won {((long)(rdGame.Amount * 2 * 0.8)) + CurrencySign}";
+                        embed.Description += $"\n**{winner}** Won {((long)(rdGame.Amount * 2 * 0.9)) + CurrencySign}";
                         await rdMsg.ModifyAsync(x => x.Embed = embed.Build())
                             .ConfigureAwait(false);
                     }
