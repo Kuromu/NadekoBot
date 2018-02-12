@@ -1,752 +1,328 @@
 {
-  "Animals": [
+  "Monsters": [
     {
-      "Word": "meerkat",
-      "ImageUrl": "https://www.randomlists.com/img/animals/meerkat.jpg"
+      "Word": "mewkat",
+      "ImageUrl": "https://orig00.deviantart.net/5b6e/f/2017/011/4/4/mewkat___old_by_yeyasanic-d8d0vhy.png"
     },
     {
-      "ImageUrl": "https://www.randomlists.com/img/animals/aardvark.jpg",
-      "Word": "aardvark"
+      "ImageUrl": "http://spiralknightsdb.wikidot.com/local--files/trojan/trojan.png",
+      "Word": "trojan"
     },
     {
-      "Word": "addax",
-      "ImageUrl": "https://www.randomlists.com/img/animals/addax.jpg"
+      "Word": "gun puppy",
+      "ImageUrl": "http://wiki.spiralknights.com/images/7/7f/Monster-Gun_Puppy_3.png"
     },
     {
-      "Word": "alligator",
-      "ImageUrl": "https://www.randomlists.com/img/animals/alligator.jpg"
+      "Word": "rocket puppy",
+      "ImageUrl": "http://wiki.spiralknights.com/images/7/71/Monster-Rocket_Puppy_2.png"
     },
     {
-      "Word": "alpaca",
-      "ImageUrl": "https://www.randomlists.com/img/animals/alpaca.jpg"
+      "Word": "love puppy",
+      "ImageUrl": "http://wiki.spiralknights.com/images/8/87/GuildLogo-Disciples_of_Jimmy.png"
     },
     {
-      "Word": "anteater",
-      "ImageUrl": "https://www.randomlists.com/img/animals/anteater.jpg"
+      "Word": "tortodrone",
+      "ImageUrl": "http://wiki.spiralknights.com/images/thumb/0/08/Monster-Tortodrone.png/128px-Monster-Tortodrone.png"
     },
     {
-      "Word": "antelope",
-      "ImageUrl": "https://www.randomlists.com/img/animals/antelope.jpg"
+      "Word": "silkwing",
+      "ImageUrl": "http://wiki.spiralknights.com/images/thumb/f/f7/Monster-Silkwing.png/128px-Monster-Silkwing.png"
     },
     {
-      "Word": "aoudad",
-      "ImageUrl": "https://www.randomlists.com/img/animals/aoudad.jpg"
+      "Word": "ghostmane stalker",
+      "ImageUrl": "http://wiki.spiralknights.com/images/2/2b/Monster-Ghostmane_Stalker.png"
     },
     {
-      "Word": "ape",
-      "ImageUrl": "https://www.randomlists.com/img/animals/ape.jpg"
+      "Word": "dreadnaught",
+      "ImageUrl": "http://wiki.spiralknights.com/images/d/de/Monster-Deadnaught.png"
     },
     {
-      "Word": "argali",
-      "ImageUrl": "https://www.randomlists.com/img/animals/argali.jpg"
+      "Word": "almirian royal guard",
+      "ImageUrl": "http://wiki.spiralknights.com/images/0/08/Monster-Almirian_Royal_Guard.png"
     },
     {
-      "Word": "armadillo",
-      "ImageUrl": "https://www.randomlists.com/img/animals/armadillo.jpg"
+      "Word": "gourdling",
+      "ImageUrl": "http://wiki.spiralknights.com/images/thumb/5/53/Monster-Grim_Gourdling.png/128px-Monster-Grim_Gourdling.png"
     },
     {
-      "Word": "baboon",
-      "ImageUrl": "https://www.randomlists.com/img/animals/baboon.jpg"
+      "Word": "polyp",
+      "ImageUrl": "http://wiki.spiralknights.com/images/e/e6/Monster-Polyp_3.png"
     },
     {
-      "Word": "badger",
-      "ImageUrl": "https://www.randomlists.com/img/animals/badger.jpg"
+      "Word": "greaver",
+      "ImageUrl": "http://wiki.spiralknights.com/images/a/ad/Monster-Greaver.png"
     },
     {
-      "Word": "basilisk",
-      "ImageUrl": "https://www.randomlists.com/img/animals/basilisk.jpg"
+      "Word": "chromalisk",
+      "ImageUrl": "http://wiki.spiralknights.com/images/9/92/Monster-Chromalisk_3.png"
     },
     {
-      "Word": "bat",
-      "ImageUrl": "https://www.randomlists.com/img/animals/bat.jpg"
-    },
-    {
-      "Word": "bear",
-      "ImageUrl": "https://www.randomlists.com/img/animals/bear.jpg"
-    },
-    {
-      "Word": "beaver",
-      "ImageUrl": "https://www.randomlists.com/img/animals/beaver.jpg"
-    },
-    {
-      "Word": "bighorn",
-      "ImageUrl": "https://www.randomlists.com/img/animals/bighorn.jpg"
-    },
-    {
-      "Word": "bison",
-      "ImageUrl": "https://www.randomlists.com/img/animals/bison.jpg"
-    },
-    {
-      "Word": "boar",
-      "ImageUrl": "https://www.randomlists.com/img/animals/boar.jpg"
-    },
-    {
-      "Word": "budgerigar",
-      "ImageUrl": "https://www.randomlists.com/img/animals/budgerigar.jpg"
-    },
-    {
-      "Word": "buffalo",
-      "ImageUrl": "https://www.randomlists.com/img/animals/buffalo.jpg"
-    },
-    {
-      "Word": "bull",
-      "ImageUrl": "https://www.randomlists.com/img/animals/bull.jpg"
-    },
-    {
-      "Word": "bunny",
-      "ImageUrl": "https://www.randomlists.com/img/animals/bunny.jpg"
-    },
-    {
-      "Word": "burro",
-      "ImageUrl": "https://www.randomlists.com/img/animals/burro.jpg"
-    },
-    {
-      "Word": "camel",
-      "ImageUrl": "https://www.randomlists.com/img/animals/camel.jpg"
-    },
-    {
-      "Word": "canary",
-      "ImageUrl": "https://www.randomlists.com/img/animals/canary.jpg"
-    },
-    {
-      "Word": "capybara",
-      "ImageUrl": "https://www.randomlists.com/img/animals/capybara.jpg"
-    },
-    {
-      "Word": "cat",
-      "ImageUrl": "https://www.randomlists.com/img/animals/cat.jpg"
-    },
-    {
-      "Word": "chameleon",
-      "ImageUrl": "https://www.randomlists.com/img/animals/chameleon.jpg"
-    },
-    {
-      "Word": "chamois",
-      "ImageUrl": "https://www.randomlists.com/img/animals/chamois.jpg"
-    },
-    {
-      "Word": "cheetah",
-      "ImageUrl": "https://www.randomlists.com/img/animals/cheetah.jpg"
-    },
-    {
-      "Word": "chimpanzee",
-      "ImageUrl": "https://www.randomlists.com/img/animals/chimpanzee.jpg"
-    },
-    {
-      "Word": "chinchilla",
-      "ImageUrl": "https://www.randomlists.com/img/animals/chinchilla.jpg"
-    },
-    {
-      "Word": "chipmunk",
-      "ImageUrl": "https://www.randomlists.com/img/animals/chipmunk.jpg"
-    },
-    {
-      "Word": "civet",
-      "ImageUrl": "https://www.randomlists.com/img/animals/civet.jpg"
-    },
-    {
-      "Word": "coati",
-      "ImageUrl": "https://www.randomlists.com/img/animals/coati.jpg"
-    },
-    {
-      "Word": "colt",
-      "ImageUrl": "https://www.randomlists.com/img/animals/colt.jpg"
-    },
-    {
-      "Word": "cougar",
-      "ImageUrl": "https://www.randomlists.com/img/animals/cougar.jpg"
-    },
-    {
-      "Word": "cow",
-      "ImageUrl": "https://www.randomlists.com/img/animals/cow.jpg"
-    },
-    {
-      "Word": "coyote",
-      "ImageUrl": "https://www.randomlists.com/img/animals/coyote.jpg"
-    },
-    {
-      "Word": "crocodile",
-      "ImageUrl": "https://www.randomlists.com/img/animals/crocodile.jpg"
-    },
-    {
-      "Word": "crow",
-      "ImageUrl": "https://www.randomlists.com/img/animals/crow.jpg"
-    },
-    {
-      "Word": "deer",
-      "ImageUrl": "https://www.randomlists.com/img/animals/deer.jpg"
-    },
-    {
-      "Word": "dingo",
-      "ImageUrl": "https://www.randomlists.com/img/animals/dingo.jpg"
-    },
-    {
-      "Word": "doe",
-      "ImageUrl": "https://www.randomlists.com/img/animals/doe.jpg"
-    },
-    {
-      "Word": "dung beetle",
-      "ImageUrl": "https://www.randomlists.com/img/animals/dung_beetle.jpg"
-    },
-    {
-      "Word": "dog",
-      "ImageUrl": "https://www.randomlists.com/img/animals/dog.jpg"
-    },
-    {
-      "Word": "donkey",
-      "ImageUrl": "https://www.randomlists.com/img/animals/donkey.jpg"
-    },
-    {
-      "Word": "dormouse",
-      "ImageUrl": "https://www.randomlists.com/img/animals/dormouse.jpg"
-    },
-    {
-      "Word": "dromedary",
-      "ImageUrl": "https://www.randomlists.com/img/animals/dromedary.jpg"
-    },
-    {
-      "Word": "duckbill platypus",
-      "ImageUrl": "https://www.randomlists.com/img/animals/duckbill_platypus.jpg"
-    },
-    {
-      "Word": "dugong",
-      "ImageUrl": "https://www.randomlists.com/img/animals/dugong.jpg"
-    },
-    {
-      "Word": "eland",
-      "ImageUrl": "https://www.randomlists.com/img/animals/eland.jpg"
-    },
-    {
-      "Word": "elephant",
-      "ImageUrl": "https://www.randomlists.com/img/animals/elephant.jpg"
-    },
-    {
-      "Word": "elk",
-      "ImageUrl": "https://www.randomlists.com/img/animals/elk.jpg"
-    },
-    {
-      "Word": "ermine",
-      "ImageUrl": "https://www.randomlists.com/img/animals/ermine.jpg"
-    },
-    {
-      "Word": "ewe",
-      "ImageUrl": "https://www.randomlists.com/img/animals/ewe.jpg"
-    },
-    {
-      "Word": "fawn",
-      "ImageUrl": "https://www.randomlists.com/img/animals/fawn.jpg"
-    },
-    {
-      "Word": "ferret",
-      "ImageUrl": "https://www.randomlists.com/img/animals/ferret.jpg"
-    },
-    {
-      "Word": "finch",
-      "ImageUrl": "https://www.randomlists.com/img/animals/finch.jpg"
-    },
-    {
-      "Word": "fish",
-      "ImageUrl": "https://www.randomlists.com/img/animals/fish.jpg"
-    },
-    {
-      "Word": "fox",
-      "ImageUrl": "https://www.randomlists.com/img/animals/fox.jpg"
-    },
-    {
-      "Word": "frog",
-      "ImageUrl": "https://www.randomlists.com/img/animals/frog.jpg"
-    },
-    {
-      "Word": "gazelle",
-      "ImageUrl": "https://www.randomlists.com/img/animals/gazelle.jpg"
-    },
-    {
-      "Word": "gemsbok",
-      "ImageUrl": "https://www.randomlists.com/img/animals/gemsbok.jpg"
-    },
-    {
-      "Word": "gila monster",
-      "ImageUrl": "https://www.randomlists.com/img/animals/gila_monster.jpg"
-    },
-    {
-      "Word": "giraffe",
-      "ImageUrl": "https://www.randomlists.com/img/animals/giraffe.jpg"
-    },
-    {
-      "Word": "gnu",
-      "ImageUrl": "https://www.randomlists.com/img/animals/gnu.jpg"
-    },
-    {
-      "Word": "goat",
-      "ImageUrl": "https://www.randomlists.com/img/animals/goat.jpg"
-    },
-    {
-      "Word": "gopher",
-      "ImageUrl": "https://www.randomlists.com/img/animals/gopher.jpg"
-    },
-    {
-      "Word": "gorilla",
-      "ImageUrl": "https://www.randomlists.com/img/animals/gorilla.jpg"
-    },
-    {
-      "Word": "grizzly bear",
-      "ImageUrl": "https://www.randomlists.com/img/animals/grizzly_bear.jpg"
-    },
-    {
-      "Word": "ground hog",
-      "ImageUrl": "https://www.randomlists.com/img/animals/ground_hog.jpg"
-    },
-    {
-      "Word": "guanaco",
-      "ImageUrl": "https://www.randomlists.com/img/animals/guanaco.jpg"
-    },
-    {
-      "Word": "guinea pig",
-      "ImageUrl": "https://www.randomlists.com/img/animals/guinea_pig.jpg"
-    },
-    {
-      "Word": "hamster",
-      "ImageUrl": "https://www.randomlists.com/img/animals/hamster.jpg"
-    },
-    {
-      "Word": "hare",
-      "ImageUrl": "https://www.randomlists.com/img/animals/hare.jpg"
-    },
-    {
-      "Word": "hartebeest",
-      "ImageUrl": "https://www.randomlists.com/img/animals/hartebeest.jpg"
-    },
-    {
-      "Word": "hedgehog",
-      "ImageUrl": "https://www.randomlists.com/img/animals/hedgehog.jpg"
-    },
-    {
-      "Word": "hippopotamus",
-      "ImageUrl": "https://www.randomlists.com/img/animals/hippopotamus.jpg"
-    },
-    {
-      "Word": "hog",
-      "ImageUrl": "https://www.randomlists.com/img/animals/hog.jpg"
-    },
-    {
-      "Word": "horse",
-      "ImageUrl": "https://www.randomlists.com/img/animals/horse.jpg"
-    },
-    {
-      "Word": "hyena",
-      "ImageUrl": "https://www.randomlists.com/img/animals/hyena.jpg"
-    },
-    {
-      "Word": "ibex",
-      "ImageUrl": "https://www.randomlists.com/img/animals/ibex.jpg"
-    },
-    {
-      "Word": "iguana",
-      "ImageUrl": "https://www.randomlists.com/img/animals/iguana.jpg"
-    },
-    {
-      "Word": "impala",
-      "ImageUrl": "https://www.randomlists.com/img/animals/impala.jpg"
-    },
-    {
-      "Word": "jackal",
-      "ImageUrl": "https://www.randomlists.com/img/animals/jackal.jpg"
-    },
-    {
-      "Word": "jaguar",
-      "ImageUrl": "https://www.randomlists.com/img/animals/jaguar.jpg"
-    },
-    {
-      "Word": "jerboa",
-      "ImageUrl": "https://www.randomlists.com/img/animals/jerboa.jpg"
-    },
-    {
-      "Word": "kangaroo",
-      "ImageUrl": "https://www.randomlists.com/img/animals/kangaroo.jpg"
-    },
-    {
-      "Word": "kitten",
-      "ImageUrl": "https://www.randomlists.com/img/animals/kitten.jpg"
-    },
-    {
-      "Word": "koala",
-      "ImageUrl": "https://www.randomlists.com/img/animals/koala.jpg"
-    },
-    {
-      "Word": "lamb",
-      "ImageUrl": "https://www.randomlists.com/img/animals/lamb.jpg"
-    },
-    {
-      "Word": "lemur",
-      "ImageUrl": "https://www.randomlists.com/img/animals/lemur.jpg"
-    },
-    {
-      "Word": "leopard",
-      "ImageUrl": "https://www.randomlists.com/img/animals/leopard.jpg"
-    },
-    {
-      "Word": "lion",
-      "ImageUrl": "https://www.randomlists.com/img/animals/lion.jpg"
-    },
-    {
-      "Word": "lizard",
-      "ImageUrl": "https://www.randomlists.com/img/animals/lizard.jpg"
-    },
-    {
-      "Word": "llama",
-      "ImageUrl": "https://www.randomlists.com/img/animals/llama.jpg"
-    },
-    {
-      "Word": "lovebird",
-      "ImageUrl": "https://www.randomlists.com/img/animals/lovebird.jpg"
-    },
-    {
-      "Word": "lynx",
-      "ImageUrl": "https://www.randomlists.com/img/animals/lynx.jpg"
-    },
-    {
-      "Word": "mandrill",
-      "ImageUrl": "https://www.randomlists.com/img/animals/mandrill.jpg"
-    },
-    {
-      "Word": "mare",
-      "ImageUrl": "https://www.randomlists.com/img/animals/mare.jpg"
-    },
-    {
-      "Word": "marmoset",
-      "ImageUrl": "https://www.randomlists.com/img/animals/marmoset.jpg"
-    },
-    {
-      "Word": "marten",
-      "ImageUrl": "https://www.randomlists.com/img/animals/marten.jpg"
-    },
-    {
-      "Word": "mink",
-      "ImageUrl": "https://www.randomlists.com/img/animals/mink.jpg"
-    },
-    {
-      "Word": "mole",
-      "ImageUrl": "https://www.randomlists.com/img/animals/mole.jpg"
-    },
-    {
-      "Word": "mongoose",
-      "ImageUrl": "https://www.randomlists.com/img/animals/mongoose.jpg"
-    },
-    {
-      "Word": "monkey",
-      "ImageUrl": "https://www.randomlists.com/img/animals/monkey.jpg"
-    },
-    {
-      "Word": "moose",
-      "ImageUrl": "https://www.randomlists.com/img/animals/moose.jpg"
-    },
-    {
-      "Word": "mountain goat",
-      "ImageUrl": "https://www.randomlists.com/img/animals/mountain_goat.jpg"
-    },
-    {
-      "Word": "mouse",
-      "ImageUrl": "https://www.randomlists.com/img/animals/mouse.jpg"
-    },
-    {
-      "Word": "mule",
-      "ImageUrl": "https://www.randomlists.com/img/animals/mule.jpg"
-    },
-    {
-      "Word": "musk deer",
-      "ImageUrl": "https://www.randomlists.com/img/animals/musk_deer.jpg"
-    },
-    {
-      "Word": "musk-ox",
-      "ImageUrl": "https://www.randomlists.com/img/animals/musk-ox.jpg"
-    },
-    {
-      "Word": "muskrat",
-      "ImageUrl": "https://www.randomlists.com/img/animals/muskrat.jpg"
-    },
-    {
-      "Word": "mustang",
-      "ImageUrl": "https://www.randomlists.com/img/animals/mustang.jpg"
-    },
-    {
-      "Word": "mynah bird",
-      "ImageUrl": "https://www.randomlists.com/img/animals/mynah_bird.jpg"
-    },
-    {
-      "Word": "newt",
-      "ImageUrl": "https://www.randomlists.com/img/animals/newt.jpg"
-    },
-    {
-      "Word": "ocelot",
-      "ImageUrl": "https://www.randomlists.com/img/animals/ocelot.jpg"
-    },
-    {
-      "Word": "okapi",
-      "ImageUrl": "https://www.randomlists.com/img/animals/okapi.jpg"
-    },
-    {
-      "Word": "opossum",
-      "ImageUrl": "https://www.randomlists.com/img/animals/opossum.jpg"
-    },
-    {
-      "Word": "orangutan",
-      "ImageUrl": "https://www.randomlists.com/img/animals/orangutan.jpg"
-    },
-    {
-      "Word": "oryx",
-      "ImageUrl": "https://www.randomlists.com/img/animals/oryx.jpg"
-    },
-    {
-      "Word": "otter",
-      "ImageUrl": "https://www.randomlists.com/img/animals/otter.jpg"
-    },
-    {
-      "Word": "ox",
-      "ImageUrl": "https://www.randomlists.com/img/animals/ox.jpg"
-    },
-    {
-      "Word": "panda",
-      "ImageUrl": "https://www.randomlists.com/img/animals/panda.jpg"
-    },
-    {
-      "Word": "panther",
-      "ImageUrl": "https://www.randomlists.com/img/animals/panther.jpg"
-    },
-    {
-      "Word": "parakeet",
-      "ImageUrl": "https://www.randomlists.com/img/animals/parakeet.jpg"
-    },
-    {
-      "Word": "parrot",
-      "ImageUrl": "https://www.randomlists.com/img/animals/parrot.jpg"
-    },
-    {
-      "Word": "peccary",
-      "ImageUrl": "https://www.randomlists.com/img/animals/peccary.jpg"
-    },
-    {
-      "Word": "pig",
-      "ImageUrl": "https://www.randomlists.com/img/animals/pig.jpg"
-    },
-    {
-      "Word": "octopus",
-      "ImageUrl": "https://www.randomlists.com/img/animals/octopus.jpg"
-    },
-    {
-      "Word": "thorny devil",
-      "ImageUrl": "https://www.randomlists.com/img/animals/thorny_devil.jpg"
-    },
-    {
-      "Word": "starfish",
-      "ImageUrl": "https://www.randomlists.com/img/animals/starfish.jpg"
-    },
-    {
-      "Word": "blue crab",
-      "ImageUrl": "https://www.randomlists.com/img/animals/blue_crab.jpg"
-    },
-    {
-      "Word": "snowy owl",
-      "ImageUrl": "https://www.randomlists.com/img/animals/snowy_owl.jpg"
-    },
-    {
-      "Word": "chicken",
-      "ImageUrl": "https://www.randomlists.com/img/animals/chicken.jpg"
-    },
-    {
-      "Word": "rooster",
-      "ImageUrl": "https://www.randomlists.com/img/animals/rooster.jpg"
-    },
-    {
-      "Word": "bumble bee",
-      "ImageUrl": "https://www.randomlists.com/img/animals/bumble_bee.jpg"
-    },
-    {
-      "Word": "eagle owl",
-      "ImageUrl": "https://www.randomlists.com/img/animals/eagle_owl.jpg"
-    },
-    {
-      "Word": "polar bear",
-      "ImageUrl": "https://www.randomlists.com/img/animals/polar_bear.jpg"
-    },
-    {
-      "Word": "pony",
-      "ImageUrl": "https://www.randomlists.com/img/animals/pony.jpg"
-    },
-    {
-      "Word": "porcupine",
-      "ImageUrl": "https://www.randomlists.com/img/animals/porcupine.jpg"
-    },
-    {
-      "Word": "porpoise",
-      "ImageUrl": "https://www.randomlists.com/img/animals/porpoise.jpg"
-    },
-    {
-      "Word": "prairie dog",
-      "ImageUrl": "https://www.randomlists.com/img/animals/prairie_dog.jpg"
-    },
-    {
-      "Word": "pronghorn",
-      "ImageUrl": "https://www.randomlists.com/img/animals/pronghorn.jpg"
-    },
-    {
-      "Word": "puma",
-      "ImageUrl": "https://www.randomlists.com/img/animals/puma.jpg"
-    },
-    {
-      "Word": "puppy",
-      "ImageUrl": "https://www.randomlists.com/img/animals/puppy.jpg"
-    },
-    {
-      "Word": "quagga",
-      "ImageUrl": "https://www.randomlists.com/img/animals/quagga.jpg"
-    },
-    {
-      "Word": "rabbit",
-      "ImageUrl": "https://www.randomlists.com/img/animals/rabbit.jpg"
-    },
-    {
-      "Word": "raccoon",
-      "ImageUrl": "https://www.randomlists.com/img/animals/raccoon.jpg"
-    },
-    {
-      "Word": "ram",
-      "ImageUrl": "https://www.randomlists.com/img/animals/ram.jpg"
-    },
-    {
-      "Word": "rat",
-      "ImageUrl": "https://www.randomlists.com/img/animals/rat.jpg"
-    },
-    {
-      "Word": "reindeer",
-      "ImageUrl": "https://www.randomlists.com/img/animals/reindeer.jpg"
-    },
-    {
-      "Word": "rhinoceros",
-      "ImageUrl": "https://www.randomlists.com/img/animals/rhinoceros.jpg"
+      "Word": "kleptolisk",
+      "ImageUrl": "http://wiki.spiralknights.com/images/2/26/Monster-Kleptolisk.png"
     },
     {
       "Word": "salamander",
-      "ImageUrl": "https://www.randomlists.com/img/animals/salamander.jpg"
+      "ImageUrl": "http://wiki.spiralknights.com/images/d/d3/Monster-Salamander_3.png"
     },
     {
-      "Word": "seal",
-      "ImageUrl": "https://www.randomlists.com/img/animals/seal.jpg"
+      "Word": "tundralisk",
+      "ImageUrl": "http://wiki.spiralknights.com/images/7/70/Monster-Tundralisk_3.png"
     },
     {
-      "Word": "sheep",
-      "ImageUrl": "https://www.randomlists.com/img/animals/sheep.jpg"
+      "Word": "virulisk",
+      "ImageUrl": "http://wiki.spiralknights.com/images/e/e2/Monster-Virulisk_3.png"
     },
     {
-      "Word": "shrew",
-      "ImageUrl": "https://www.randomlists.com/img/animals/shrew.jpg"
+      "Word": "electrolisk",
+      "ImageUrl": "http://wiki.spiralknights.com/images/6/66/Monster-Electrolisk_3.png"
     },
     {
-      "Word": "silver fox",
-      "ImageUrl": "https://www.randomlists.com/img/animals/silver_fox.jpg"
+      "Word": "wolver",
+      "ImageUrl": "http://wiki.spiralknights.com/images/7/74/Monster-Wolver_3.png"
     },
     {
-      "Word": "skunk",
-      "ImageUrl": "https://www.randomlists.com/img/animals/skunk.jpg"
+      "Word": "ash tail",
+      "ImageUrl": "http://wiki.spiralknights.com/images/a/a0/Monster-Ash_Tail_3.png"
     },
     {
-      "Word": "sloth",
-      "ImageUrl": "https://www.randomlists.com/img/animals/sloth.jpg"
+      "Word": "frostifur",
+      "ImageUrl": "http://wiki.spiralknights.com/images/6/6f/Monster-Frostifur_3.png"
     },
     {
-      "Word": "snake",
-      "ImageUrl": "https://www.randomlists.com/img/animals/snake.jpg"
+      "Word": "voltail",
+      "ImageUrl": "http://wiki.spiralknights.com/images/4/47/Monster-Voltail_3.png"
     },
     {
-      "Word": "springbok",
-      "ImageUrl": "https://www.randomlists.com/img/animals/springbok.jpg"
+      "Word": "apocrean harvester",
+      "ImageUrl": "http://wiki.spiralknights.com/images/3/35/Monster-Apocrean_Harvester.png"
     },
     {
-      "Word": "squirrel",
-      "ImageUrl": "https://www.randomlists.com/img/animals/squirrel.jpg"
+      "Word": "wisp",
+      "ImageUrl": "http://wiki.spiralknights.com/images/thumb/c/ca/Monster-Bog_Wisp.png/128px-Monster-Bog_Wisp.png"
     },
     {
-      "Word": "stallion",
-      "ImageUrl": "https://www.randomlists.com/img/animals/stallion.jpg"
+      "Word": "phantom",
+      "ImageUrl": "http://wiki.spiralknights.com/images/4/4e/Monster-Phantom.png"
     },
     {
-      "Word": "steer",
-      "ImageUrl": "https://www.randomlists.com/img/animals/steer.jpg"
+      "Word": "dust zombie",
+      "ImageUrl": "http://wiki.spiralknights.com/images/e/eb/Monster-Dust_Zombie.png"
     },
     {
-      "Word": "tapir",
-      "ImageUrl": "https://www.randomlists.com/img/animals/tapir.jpg"
+      "Word": "carnavon",
+      "ImageUrl": "http://wiki.spiralknights.com/images/0/09/Monster-Carnavon.png"
     },
     {
-      "Word": "tiger",
-      "ImageUrl": "https://www.randomlists.com/img/animals/tiger.jpg"
+      "Word": "slag walker",
+      "ImageUrl": "http://wiki.spiralknights.com/images/c/cd/Monster-Slag_Walker.png"
     },
     {
-      "Word": "toad",
-      "ImageUrl": "https://www.randomlists.com/img/animals/toad.jpg"
+      "Word": "frozen shambler",
+      "ImageUrl": "http://wiki.spiralknights.com/images/7/72/Monster-Frozen_Shambler.png"
     },
     {
-      "Word": "turtle",
-      "ImageUrl": "https://www.randomlists.com/img/animals/turtle.jpg"
+      "Word": "droul",
+      "ImageUrl": "http://wiki.spiralknights.com/images/2/22/Monster-Droul.png"
     },
     {
-      "Word": "vicuna",
-      "ImageUrl": "https://www.randomlists.com/img/animals/vicuna.jpg"
+      "Word": "frankenzom",
+      "ImageUrl": "http://wiki.spiralknights.com/images/6/62/Monster-Frankenzom.png"
     },
     {
-      "Word": "walrus",
-      "ImageUrl": "https://www.randomlists.com/img/animals/walrus.jpg"
+      "Word": "jelly cube",
+      "ImageUrl": "http://wiki.spiralknights.com/images/9/9f/Monster-Jelly_Cube.png"
     },
     {
-      "Word": "warthog",
-      "ImageUrl": "https://www.randomlists.com/img/animals/warthog.jpg"
+      "Word": "ice cube",
+      "ImageUrl": "http://wiki.spiralknights.com/images/8/8b/Monster-Ice_Cube_3.png"
     },
     {
-      "Word": "waterbuck",
-      "ImageUrl": "https://www.randomlists.com/img/animals/waterbuck.jpg"
+      "Word": "blast cube",
+      "ImageUrl": "http://wiki.spiralknights.com/images/c/cb/Monster-Blast_Cube_2.png"
     },
     {
-      "Word": "weasel",
-      "ImageUrl": "https://www.randomlists.com/img/animals/weasel.jpg"
+      "Word": "rock jelly cube",
+      "ImageUrl": "http://wiki.spiralknights.com/images/b/b4/Monster-Rock_Jelly_Cube.png"
     },
     {
-      "Word": "whale",
-      "ImageUrl": "https://www.randomlists.com/img/animals/whale.jpg"
+      "Word": "impostocube",
+      "ImageUrl": "http://wiki.spiralknights.com/images/7/7d/Monster-Impostocube.png"
     },
     {
-      "Word": "wildcat",
-      "ImageUrl": "https://www.randomlists.com/img/animals/wildcat.jpg"
+      "Word": "lichen",
+      "ImageUrl": "http://wiki.spiralknights.com/images/3/39/Monster-Lichen.png"
     },
     {
-      "Word": "bald eagle",
-      "ImageUrl": "https://www.randomlists.com/img/animals/bald_eagle.jpg"
+      "Word": "oiler",
+      "ImageUrl": "http://wiki.spiralknights.com/images/c/c0/Monster-Oiler_2.png"
     },
     {
-      "Word": "wolf",
-      "ImageUrl": "https://www.randomlists.com/img/animals/wolf.jpg"
+      "Word": "toxoil",
+      "ImageUrl": "http://wiki.spiralknights.com/images/a/a2/Monster-Toxoil.png"
     },
     {
-      "Word": "wolverine",
-      "ImageUrl": "https://www.randomlists.com/img/animals/wolverine.jpg"
+      "Word": "toxigel",
+      "ImageUrl": "http://wiki.spiralknights.com/images/8/86/Monster-Toxigel_3.png"
     },
     {
-      "Word": "wombat",
-      "ImageUrl": "https://www.randomlists.com/img/animals/wombat.jpg"
+      "Word": "quicksilver",
+      "ImageUrl": "http://wiki.spiralknights.com/images/2/2b/Monster-Quicksilver_2.png"
     },
     {
-      "Word": "woodchuck",
-      "ImageUrl": "https://www.randomlists.com/img/animals/woodchuck.jpg"
+      "Word": "sloom",
+      "ImageUrl": "http://wiki.spiralknights.com/images/e/e3/Monster-Sloom.png"
     },
     {
-      "Word": "yak",
-      "ImageUrl": "https://www.randomlists.com/img/animals/yak.jpg"
+      "Word": "darkfang scorcher",
+      "ImageUrl": "http://wiki.spiralknights.com/images/8/82/Monster-Darkfang_Scorcher.png"
     },
     {
-      "Word": "zebra",
-      "ImageUrl": "https://www.randomlists.com/img/animals/zebra.jpg"
+      "Word": "darkfang thwacker",
+      "ImageUrl": "http://wiki.spiralknights.com/images/1/18/Monster-Darkfang_Thwacker.png"
     },
     {
-      "Word": "zebu",
-      "ImageUrl": "https://www.randomlists.com/img/animals/zebu.jpg"
+      "Word": "darkfang mender",
+      "ImageUrl": "https://wiki.spiralknights.com/images/9/97/Monster-Darkfang_Mender.png"
+    },
+    {
+      "Word": "darkfang demo",
+      "ImageUrl": "http://wiki.spiralknights.com/images/0/08/Monster-Darkfang_Demo.png"
+    },
+    {
+      "Word": "gremlin knocker",
+      "ImageUrl": "http://wiki.spiralknights.com/images/c/c9/Monster-Gremlin_Knocker.png"
+    },
+    {
+      "Word": "gremlin lighter",
+      "ImageUrl": "http://wiki.spiralknights.com/images/5/5a/Monster-Gremlin_Lighter.png"
+    },
+    {
+      "Word": "gremlin cooler",
+      "ImageUrl": "http://wiki.spiralknights.com/images/4/42/Monster-Gremlin_Cooler.png"
+    },
+    {
+      "Word": "gremlin choker",
+      "ImageUrl": "http://wiki.spiralknights.com/images/3/34/Monster-Gremlin_Choker.png"
+    },
+    {
+      "Word": "gremlin jumper",
+      "ImageUrl": "http://wiki.spiralknights.com/images/5/54/Monster-Gremlin_Jumper.png"
+    },
+    {
+      "Word": "gremlin mortafire",
+      "ImageUrl": "http://wiki.spiralknights.com/images/5/5a/Monster-Gremlin_Mortafire.png"
+    },
+    {
+      "Word": "gorgo",
+      "ImageUrl": "http://wiki.spiralknights.com/images/0/04/Monster-Gorgo.png"
+    },
+    {
+      "Word": "firegut",
+      "ImageUrl": "http://wiki.spiralknights.com/images/3/30/Monster-Firegut_3.png"
+    },
+    {
+      "Word": "guster",
+      "ImageUrl": "http://wiki.spiralknights.com/images/3/3b/Monster-Guster_2.png"
+    },
+    {
+      "Word": "waster",
+      "ImageUrl": "http://wiki.spiralknights.com/images/1/16/Monster-Waster_3.png"
+    },
+    {
+      "Word": "storm belly",
+      "ImageUrl": "http://wiki.spiralknights.com/images/9/92/Monster-Storm_Belly_2.png"
+    },
+    {
+      "Word": "devilite",
+      "ImageUrl": "http://wiki.spiralknights.com/images/4/43/Monster-Devilite.png"
+    },
+    {
+      "Word": "pitboss",
+      "ImageUrl": "http://wiki.spiralknights.com/images/a/ad/Monster-Pit_Boss.png"
+    },
+    {
+      "Word": "yesman",
+      "ImageUrl": "http://wiki.spiralknights.com/images/b/b2/Monster-Yesman.png"
+    },
+    {
+      "Word": "firebrander",
+      "ImageUrl": "http://wiki.spiralknights.com/images/1/1c/Monster-Firebrander.png"
+    },
+    {
+      "Word": "layoafer",
+      "ImageUrl": "http://wiki.spiralknights.com/images/3/37/Monster-Layoafer.png"
+    },
+    {
+      "Word": "blarful",
+      "ImageUrl": "http://wiki.spiralknights.com/images/d/dd/Monster-Blarful.png"
+    },
+    {
+      "Word": "devil-it",
+      "ImageUrl": "https://www.randomlists.com/img/animals/gemsbok.jpg"
+    },
+    {
+      "Word": "lumber",
+      "ImageUrl": "http://wiki.spiralknights.com/images/c/c5/Monster-Lumber_2.png"
+    },
+    {
+      "Word": "redward",
+      "ImageUrl": "http://wiki.spiralknights.com/images/5/5f/Monster-Redward_3.png"
+    },
+    {
+      "Word": "silversap",
+      "ImageUrl": "http://wiki.spiralknights.com/images/6/62/Monster-Silversap.png"
+    },
+    {
+      "Word": "vilewood",
+      "ImageUrl": "http://wiki.spiralknights.com/images/4/49/Monster-Vilewood.png"
+    },
+    {
+      "Word": "electreant",
+      "ImageUrl": "http://wiki.spiralknights.com/images/9/99/Monster-Electreant_3.png"
+    },
+    {
+      "Word": "mecha knight",
+      "ImageUrl": "http://wiki.spiralknights.com/images/9/96/Monster-Mecha_Knight_2.png"
+    },
+    {
+      "Word": "retrode",
+      "ImageUrl": "http://wiki.spiralknights.com/images/3/33/Monster-Retrode.png"
+    },
+    {
+      "Word": "sleetrode",
+      "ImageUrl": "http://wiki.spiralknights.com/images/e/e4/Monster-Sleetrode.png"
+    },
+    {
+      "Word": "hotrode",
+      "ImageUrl": "http://wiki.spiralknights.com/images/0/0a/Monster-Hotrode_2.png"
+    },
+    {
+      "Word": "isotrode",
+      "ImageUrl": "http://wiki.spiralknights.com/images/b/b3/Monster-Isotrode_2.png"
+    },
+    {
+      "Word": "voltrode",
+      "ImageUrl": "http://wiki.spiralknights.com/images/9/9a/Monster-Voltrode.png"
+    },
+    {
+      "Word": "battlepod",
+      "ImageUrl": "http://wiki.spiralknights.com/images/thumb/3/3a/Monster-Battlepod.png/128px-Monster-Battlepod.png"
+    },
+    {
+      "Word": "shufflebot",
+      "ImageUrl": "http://wiki.spiralknights.com/images/8/8d/Monster-Shufflebot.png"
+    },
+    {
+      "Word": "dust bunny",
+      "ImageUrl": "http://wiki.spiralknights.com/images/5/5f/Monster-Dust_Bunny_2.png"
+    },
+    {
+      "Word": "grave scarab",
+      "ImageUrl": "http://wiki.spiralknights.com/images/2/25/Monster-Grave_Scarab_2.png"
+    },
+    {
+      "Word": "grim scarab",
+      "ImageUrl": "http://wiki.spiralknights.com/images/7/74/Monster-Grim_Scarab.png"
     }
   ],
   "Countries": [
