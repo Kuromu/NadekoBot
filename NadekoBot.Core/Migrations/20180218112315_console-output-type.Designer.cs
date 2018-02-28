@@ -13,9 +13,10 @@ using System;
 namespace NadekoBot.Migrations
 {
     [DbContext(typeof(NadekoContext))]
-    partial class NadekoSqliteContextModelSnapshot : ModelSnapshot
+    [Migration("20180218112315_console-output-type")]
+    partial class consoleoutputtype
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -463,6 +464,29 @@ namespace NadekoBot.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("DiscordUser");
+                });
+
+            modelBuilder.Entity("NadekoBot.Core.Services.Database.Models.Donator", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Amount");
+
+                    b.Property<DateTime?>("DateAdded");
+
+                    b.Property<string>("Name");
+
+                    b.Property<ulong>("UserId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Amount");
+
+                    b.HasIndex("UserId")
+                        .IsUnique();
+
+                    b.ToTable("Donators");
                 });
 
             modelBuilder.Entity("NadekoBot.Core.Services.Database.Models.EightBallResponse", b =>

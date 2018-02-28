@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <!--<RuntimeFrameworkVersion>2.0.3</RuntimeFrameworkVersion>-->
+    <RuntimeFrameworkVersion>2.0.3</RuntimeFrameworkVersion>
     <LangVersion>latest</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
@@ -29,7 +29,8 @@
     <PackageReference Include="Newtonsoft.Json" Version="11.0.1-beta3" />
     <PackageReference Include="NLog" Version="5.0.0-beta11" />
     <PackageReference Include="StackExchange.Redis" Version="1.2.7-alpha-00002" />
-    <PackageReference Include="System.ValueTuple" Version="4.4.0" />    
+    <PackageReference Include="System.ValueTuple" Version="4.4.0" />
+    <PackageReference Include="YoutubeExplode" Version="4.1.0" />    
   </ItemGroup>
 
   <ItemGroup>
