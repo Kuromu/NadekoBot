@@ -263,7 +263,7 @@ namespace NadekoBot.Modules.Searches
         [NadekoCommand, Usage, Description, Aliases]
         public async Task RandomCat()
         {
-            var res = JObject.Parse(await _service.Http.GetStringAsync("http://www.random.cat/meow").ConfigureAwait(false));
+            var res = JObject.Parse(await _service.Http.GetStringAsync("http://aws.random.cat/meow").ConfigureAwait(false));
             await Context.Channel.EmbedAsync(new EmbedBuilder()
                 .WithOkColor()
                 .WithImageUrl(Uri.EscapeUriString(res["file"].ToString())))
@@ -773,23 +773,14 @@ namespace NadekoBot.Modules.Searches
         }
 
         [NadekoCommand, Usage, Description, Aliases]
-        public async Task Color(params string[] colors)
+        public async Task Color(params Rgba32[] colors)
         {
             if (!colors.Any())
                 return;
 
-            var colorObjects = colors.Take(10).Select(x => x.Trim().Replace("#", ""))
-                .Select(x =>
-                {
-                    try
-                    {
-                        return Rgba32.FromHex(x);
-                    }
-                    catch
-                    {
-                        return Rgba32.FromHex("000");
-                    }
-                }).ToArray();
+            var colorObjects = colors.Take(10)
+                .ToArray();
+
             using (var img = new Image<Rgba32>(colorObjects.Length * 50, 50))
             {
                 for (int i = 0; i < colorObjects.Length; i++)
