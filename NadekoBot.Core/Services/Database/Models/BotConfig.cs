@@ -1,5 +1,4 @@
 ﻿using Discord;
-using NadekoBot.Core.Common;
 using System;
 using System.Collections.Generic;
 
@@ -69,7 +68,7 @@ Nadeko Support Server: https://discord.gg/nadekobot";
         public List<StartupCommand> StartupCommands { get; set; }
         public HashSet<BlockedCmdOrMdl> BlockedCommands { get; set; }
         public HashSet<BlockedCmdOrMdl> BlockedModules { get; set; }
-        public int PermissionVersion { get; set; }
+        public int PermissionVersion { get; set; } = 2;
         public string DefaultPrefix { get; set; } = ".";
         public bool CustomReactionsStartWith { get; set; } = false;
         public int XpPerMessage { get; set; } = 3;
@@ -81,6 +80,7 @@ Nadeko Support Server: https://discord.gg/nadekobot";
         public int MinimumTriviaWinReq { get; set; }
         public int MinBet { get; set; } = 0;
         public int MaxBet { get; set; } = 0;
+        public ConsoleOutputType ConsoleOutputType { get; set; } = ConsoleOutputType.Normal;
     }
 
     public class BlockedCmdOrMdl : DbEntity
@@ -92,6 +92,12 @@ Nadeko Support Server: https://discord.gg/nadekobot";
 
         public override int GetHashCode() =>
             Name.GetHashCode();
+    }
+
+    public enum ConsoleOutputType
+    {
+        Normal,
+        Simple
     }
 
     public class StartupCommand : DbEntity, IIndexed

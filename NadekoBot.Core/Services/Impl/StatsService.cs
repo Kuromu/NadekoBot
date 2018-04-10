@@ -23,7 +23,7 @@ namespace NadekoBot.Core.Services.Impl
         private readonly IBotCredentials _creds;
         private readonly DateTime _started;
 
-        public const string BotVersion = "2.16";
+        public const string BotVersion = "2.18.2";
         public string Author => "Kwoth#2560";
         public string Library => "Discord.Net";
 
@@ -41,9 +41,7 @@ namespace NadekoBot.Core.Services.Impl
         public long CommandsRan => Interlocked.Read(ref _commandsRan);
 
         private readonly Timer _carbonitexTimer;
-#if GLOBAL_NADEKO
         private readonly Timer _botlistTimer;
-#endif
         private readonly Timer _dataTimer;
         private readonly ConnectionMultiplexer _redis;
 
@@ -164,7 +162,7 @@ namespace NadekoBot.Core.Services.Impl
                     }
                 }, null, TimeSpan.FromHours(1), TimeSpan.FromHours(1));
             }
-#if GLOBAL_NADEKO
+
             _botlistTimer = new Timer(async (state) =>
             {
                 if (string.IsNullOrWhiteSpace(_creds.BotListToken))
@@ -194,7 +192,6 @@ namespace NadekoBot.Core.Services.Impl
                     // ignored
                 }
             }, null, TimeSpan.FromMinutes(5), TimeSpan.FromHours(1));
-#endif
 
             var platform = "other";
             if (RuntimeInformation.IsOSPlatform(OSPlatform.Linux))
@@ -236,22 +233,6 @@ namespace NadekoBot.Core.Services.Impl
             var guilds = _client.Guilds.ToArray();
             _textChannels = guilds.Sum(g => g.Channels.Count(cx => cx is ITextChannel));
             _voiceChannels = guilds.Sum(g => g.Channels.Count(cx => cx is IVoiceChannel));
-        }
-
-        public Task<string> Print()
-        {
-            SocketSelfUser curUser;
-            while ((curUser = _client.CurrentUser) == null) Task.Delay(1000).ConfigureAwait(false);
-
-            return Task.FromResult($@"
-Author: [{Author}] | Library: [{Library}]
-Bot Version: [{BotVersion}]
-Bot ID: {curUser.Id}
-Owner ID(s): {string.Join(", ", _creds.OwnerIds)}
-Uptime: {GetUptimeString()}
-Servers: {_client.Guilds.Count} | TextChannels: {TextChannels} | VoiceChannels: {VoiceChannels}
-Commands Ran this session: {CommandsRan}
-Messages: {MessageCounter} [{MessagesPerSecond:F2}/sec] Heap: [{Heap} MB]");
         }
 
         public TimeSpan GetUptime() =>
