@@ -13,9 +13,10 @@ using System;
 namespace NadekoBot.Migrations
 {
     [DbContext(typeof(NadekoContext))]
-    partial class NadekoSqliteContextModelSnapshot : ModelSnapshot
+    [Migration("20180419015916_no-redundant")]
+    partial class noredundant
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -162,8 +163,6 @@ namespace NadekoBot.Migrations
 
                     b.Property<string>("DMHelpString");
 
-                    b.Property<float>("DailyCurrencyDecay");
-
                     b.Property<DateTime?>("DateAdded");
 
                     b.Property<string>("DefaultPrefix");
@@ -179,8 +178,6 @@ namespace NadekoBot.Migrations
                     b.Property<bool>("ForwardToAllOwners");
 
                     b.Property<string>("HelpString");
-
-                    b.Property<DateTime>("LastCurrencyDecay");
 
                     b.Property<string>("Locale");
 
@@ -1462,26 +1459,6 @@ namespace NadekoBot.Migrations
                     b.ToTable("StreamRoleWhitelistedUser");
                 });
 
-            modelBuilder.Entity("NadekoBot.Core.Services.Database.Models.UnbanTimer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd();
-
-                    b.Property<DateTime?>("DateAdded");
-
-                    b.Property<int?>("GuildConfigId");
-
-                    b.Property<DateTime>("UnbanAt");
-
-                    b.Property<ulong>("UserId");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("GuildConfigId");
-
-                    b.ToTable("UnbanTimer");
-                });
-
             modelBuilder.Entity("NadekoBot.Core.Services.Database.Models.UnmuteTimer", b =>
                 {
                     b.Property<int>("Id")
@@ -2116,13 +2093,6 @@ namespace NadekoBot.Migrations
                     b.HasOne("NadekoBot.Core.Services.Database.Models.StreamRoleSettings")
                         .WithMany("Whitelist")
                         .HasForeignKey("StreamRoleSettingsId");
-                });
-
-            modelBuilder.Entity("NadekoBot.Core.Services.Database.Models.UnbanTimer", b =>
-                {
-                    b.HasOne("NadekoBot.Core.Services.Database.Models.GuildConfig")
-                        .WithMany("UnbanTimer")
-                        .HasForeignKey("GuildConfigId");
                 });
 
             modelBuilder.Entity("NadekoBot.Core.Services.Database.Models.UnmuteTimer", b =>
