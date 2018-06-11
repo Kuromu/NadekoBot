@@ -1,5 +1,5 @@
 ﻿using Discord;
-using NadekoBot.Core.Common;
+using NadekoBot.Common.Collections;
 using System;
 using System.Collections.Generic;
 
@@ -37,6 +37,8 @@ namespace NadekoBot.Core.Services.Database.Models
         public float Betroll100Multiplier { get; set; } = 10;
         public int TimelyCurrency { get; set; } = 0;
         public int TimelyCurrencyPeriod { get; set; } = 0;
+        public float DailyCurrencyDecay { get; set; } = 0;
+        public DateTime LastCurrencyDecay { get; set; } = DateTime.MinValue;
         public int MinWaifuPrice { get; set; } = 50;
         //public HashSet<CommandCost> CommandCosts { get; set; } = new HashSet<CommandCost>();
 
@@ -66,10 +68,10 @@ Nadeko Support Server: https://discord.gg/nadekobot";
         public string OkColor { get; set; } = "00e584";
         public string ErrorColor { get; set; } = "ee281f";
         public string Locale { get; set; } = null;
-        public List<StartupCommand> StartupCommands { get; set; }
+        public IndexedCollection<StartupCommand> StartupCommands { get; set; }
         public HashSet<BlockedCmdOrMdl> BlockedCommands { get; set; }
         public HashSet<BlockedCmdOrMdl> BlockedModules { get; set; }
-        public int PermissionVersion { get; set; }
+        public int PermissionVersion { get; set; } = 2;
         public string DefaultPrefix { get; set; } = ".";
         public bool CustomReactionsStartWith { get; set; } = false;
         public int XpPerMessage { get; set; } = 3;
@@ -81,6 +83,7 @@ Nadeko Support Server: https://discord.gg/nadekobot";
         public int MinimumTriviaWinReq { get; set; }
         public int MinBet { get; set; } = 0;
         public int MaxBet { get; set; } = 0;
+        public ConsoleOutputType ConsoleOutputType { get; set; } = ConsoleOutputType.Normal;
     }
 
     public class BlockedCmdOrMdl : DbEntity
@@ -94,6 +97,12 @@ Nadeko Support Server: https://discord.gg/nadekobot";
             Name.GetHashCode();
     }
 
+    public enum ConsoleOutputType
+    {
+        Normal,
+        Simple
+    }
+
     public class StartupCommand : DbEntity, IIndexed
     {
         public int Index { get; set; }
@@ -104,6 +113,7 @@ Nadeko Support Server: https://discord.gg/nadekobot";
         public string GuildName { get; set; }
         public ulong? VoiceChannelId { get; set; }
         public string VoiceChannelName { get; set; }
+        public int Interval { get; set; }
     }
 
     public class PlayingStatus : DbEntity

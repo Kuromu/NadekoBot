@@ -25,6 +25,8 @@
         MinBet,
         MaxBet,
         ErrorColor,
-        OkColor
+        OkColor,
+        ConsoleOutputType,
+        DailyCurrencyDecay
     }
 }

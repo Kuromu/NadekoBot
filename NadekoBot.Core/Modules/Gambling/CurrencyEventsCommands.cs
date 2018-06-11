@@ -58,65 +58,46 @@ namespace NadekoBot.Modules.Gambling
 
             private EmbedBuilder GetEmbed(Event.Type type, EventOptions opts, long currentPot)
             {
-
                 switch (type)
                 {
                     case Event.Type.Reaction:
                         return new EmbedBuilder()
-                                    .WithOkColor()
-                                    .WithTitle(GetText("reaction_title"))
-                                    .WithDescription(GetDescription(opts.Amount, currentPot))
-                                    .WithFooter(GetText("new_reaction_footer", opts.Hours));
+                            .WithOkColor()
+                            .WithTitle(GetText("reaction_title"))
+                            .WithDescription(GetReactionDescription(opts.Amount, currentPot))
+                            .WithFooter(GetText("new_reaction_footer", opts.Hours));
+                    //case Event.Type.NotRaid:
+                    //    return new EmbedBuilder()
+                    //        .WithOkColor()
+                    //        .WithTitle(GetText("notraid_title"))
+                    //        .WithDescription(GetNotRaidDescription(opts.Amount, currentPot))
+                    //        .WithFooter(GetText("notraid_footer", opts.Hours));
                     default:
                         break;
                 }
                 throw new ArgumentOutOfRangeException(nameof(type));
             }
 
-            private string GetDescription(long amount, long potSize)
+            private string GetReactionDescription(long amount, long potSize)
             {
                 string potSizeStr = Format.Bold(potSize == 0
-                    ? "∞"
+                    ? "∞" + _bc.BotConfig.CurrencySign
                     : potSize.ToString() + _bc.BotConfig.CurrencySign);
                 return GetText("new_reaction_event",
                                    _bc.BotConfig.CurrencySign,
                                    Format.Bold(amount + _bc.BotConfig.CurrencySign),
-                                   potSize);
+                                   potSizeStr);
             }
 
-            [NadekoCommand, Usage, Description, Aliases]
-            [RequireContext(ContextType.Guild)]
-            [OwnerOnly]
-            public async Task EventStart(OtherEvent e)
+            private string GetNotRaidDescription(long amount, long potSize)
             {
-                switch (e)
-                {
-#if GLOBAL_NADEKO
-                    case CurrencyEvent.BotListUpvoters:
-                        await BotListUpvoters(arg);
-                        break;
-#endif
-                    default:
-                        await Task.CompletedTask;
-                        return;
-                }
-            }
-
-            private async Task BotListUpvoters(long amount)
-            {
-                if (amount <= 0 || string.IsNullOrWhiteSpace(_creds.BotListToken))
-                    return;
-                string res;
-                using (var http = new HttpClient())
-                {
-                    http.DefaultRequestHeaders.Add("Authorization", _creds.BotListToken);
-                    res = await http.GetStringAsync($"https://discordbots.org/api/bots/116275390695079945/votes?onlyids=true");
-                }
-                var ids = JsonConvert.DeserializeObject<ulong[]>(res);
-                await _cs.AddBulkAsync(ids, ids.Select(x => "Botlist Upvoter Event"), ids.Select(x => amount), true);
-                await ReplyConfirmLocalized("bot_list_awarded",
-                    Format.Bold(amount.ToString()),
-                    Format.Bold(ids.Length.ToString())).ConfigureAwait(false);
+                string potSizeStr = Format.Bold(potSize == 0
+                    ? "∞" + _bc.BotConfig.CurrencySign
+                    : potSize.ToString() + _bc.BotConfig.CurrencySign);
+                return GetText("new_reaction_event",
+                                   _bc.BotConfig.CurrencySign,
+                                   Format.Bold(amount + _bc.BotConfig.CurrencySign),
+                                   potSizeStr);
             }
 
             //    private async Task SneakyGameStatusEvent(ICommandContext context, long num)

@@ -27,7 +27,6 @@ namespace NadekoBot.Core.Services.Database
     public class NadekoContext : DbContext
     {
         public DbSet<Quote> Quotes { get; set; }
-        public DbSet<Donator> Donators { get; set; }
         public DbSet<GuildConfig> GuildConfigs { get; set; }
         public DbSet<Reminder> Reminders { get; set; }
         public DbSet<SelfAssignedRole> SelfAssignableRoles { get; set; }
@@ -116,17 +115,6 @@ namespace NadekoBot.Core.Services.Database
             quoteEntity.HasIndex(x => x.Keyword);
 
             #endregion
-            
-            #region Donators
-
-            var donatorEntity = modelBuilder.Entity<Donator>();
-            donatorEntity
-                .HasIndex(d => d.UserId)
-                .IsUnique();
-
-            donatorEntity.HasIndex(d => d.Amount);
-
-            #endregion
 
             #region GuildConfig
 
@@ -134,6 +122,9 @@ namespace NadekoBot.Core.Services.Database
             configEntity
                 .HasIndex(c => c.GuildId)
                 .IsUnique();
+
+            //configEntity.Property(x => x.PermissionRole)
+            //    .HasDefaultValue(null);
 
             modelBuilder.Entity<AntiSpamSetting>()
                 .HasOne(x => x.GuildConfig)
@@ -177,6 +168,9 @@ namespace NadekoBot.Core.Services.Database
 
             botConfigEntity.Property(x => x.ErrorColor)
                 .HasDefaultValue("ee281f");
+
+            //botConfigEntity.Property(x => x.PermissionVersion)
+            //    .HasDefaultValue(2);
 
             //botConfigEntity
             //    .HasMany(c => c.ModulePrefixes)
